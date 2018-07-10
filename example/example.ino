@@ -123,6 +123,7 @@ init_spi ()
   SPI.setDataMode (SPI_MODE0);
   SPI.setClockDivider (SPI_CLOCK_DIV16);  // slow SPI bus speed
   SPI.transfer (0xFF);
+  Serial.println("init_spi completed");
 
 }
 
@@ -134,18 +135,29 @@ vs1053_write_register (unsigned char addressbyte, unsigned char highbyte,
   init_spi ();
   // SPI.setClockDivider (SCI_WRITE_SPEED);
   deselect_sd ();
+  Serial.println("2");
   vs1053_deselect_data ();
+  Serial.println("3");
   vs1053_select_control ();
+  Serial.println("4");
   delay (1);
   SPI.transfer (0x02);    // write command
+  Serial.println("5");
   SPI.transfer (addressbyte);
+  Serial.println("6");
   SPI.transfer (highbyte);
+  Serial.println("7");
   SPI.transfer (lowbyte);
+  Serial.println("8");
   vs1053_deselect_control ();
+  Serial.println("9");
 
-  while (!fastDigitalRead (MP3_DREQ));
+  // GETS STUCK HERE
+  while (!digitalRead (MP3_DREQ));
+  Serial.println("10");
 
   SPI.setClockDivider (SPI_DEFAULT_SPEED);
+  Serial.println("11");
 }
 
 
@@ -280,11 +292,13 @@ vs1053_softreset_and_patch ()
   unsigned int sci_status = 0;
 
   init_spi ();      // slow speed
+  Serial.println("1");
 
   // software reset the VS
 
   vs1053_write_register (SPI_MODE, 0x08, 0x04);
-  delay (1);
+  delay (10);
+  Serial.println("12");
   while (!fastDigitalRead (MP3_DREQ));
 
   vs1053_load_patch ();
