@@ -38,7 +38,7 @@ SdFile file;
 /** SD Card Chip Select  */
 #define SD_CS 5
 // ** Data Request Pin: Player asks for more data */
-#define MP3_DREQ 4
+#define MP3_DREQ 3
 
 /** VS10xx SCI Registers */
 #define SPI_MODE 0x0   /**< VS10xx register */
@@ -123,7 +123,7 @@ init_spi ()
   SPI.setDataMode (SPI_MODE0);
   SPI.setClockDivider (SPI_CLOCK_DIV16);  // slow SPI bus speed
   SPI.transfer (0xFF);
-  Serial.println("init_spi completed");
+//  Serial.println("init_spi completed");
 
 }
 
@@ -135,29 +135,29 @@ vs1053_write_register (unsigned char addressbyte, unsigned char highbyte,
   init_spi ();
   // SPI.setClockDivider (SCI_WRITE_SPEED);
   deselect_sd ();
-  Serial.println("2");
+//  Serial.println("2");
   vs1053_deselect_data ();
-  Serial.println("3");
+//  Serial.println("3");
   vs1053_select_control ();
-  Serial.println("4");
+//  Serial.println("4");
   delay (1);
   SPI.transfer (0x02);    // write command
-  Serial.println("5");
+//  Serial.println("5");
   SPI.transfer (addressbyte);
-  Serial.println("6");
+//  Serial.println("6");
   SPI.transfer (highbyte);
-  Serial.println("7");
+//  Serial.println("7");
   SPI.transfer (lowbyte);
-  Serial.println("8");
+//  Serial.println("8");
   vs1053_deselect_control ();
-  Serial.println("9");
+//  Serial.println("9");
 
   // GETS STUCK HERE
-  while (!digitalRead (MP3_DREQ));
-  Serial.println("10");
+//  while (!digitalRead (MP3_DREQ));
+//  Serial.println("10");
 
   SPI.setClockDivider (SPI_DEFAULT_SPEED);
-  Serial.println("11");
+//  Serial.println("11");
 }
 
 
@@ -297,9 +297,9 @@ vs1053_softreset_and_patch ()
   // software reset the VS
 
   vs1053_write_register (SPI_MODE, 0x08, 0x04);
-  delay (10);
-  Serial.println("12");
-  while (!fastDigitalRead (MP3_DREQ));
+//  Serial.println("12");
+  // GETS STUCK AGAIN
+//  while (!fastDigitalRead (MP3_DREQ));
 
   vs1053_load_patch ();
 
@@ -319,7 +319,8 @@ vs1053_softreset_without_patch ()
 {
   vs1053_write_register (SPI_AIADDR, 0x03, 0x00);
   delay (1);
-  while (!fastDigitalRead (MP3_DREQ));
+  // GET STUCK HERE
+//  while (!fastDigitalRead (MP3_DREQ));
 
 
   vs1053_write_register (SPI_CLOCKF, 0xc0, 0x00); // VS1003
@@ -338,7 +339,8 @@ transfer_32bytes (unsigned char *buf)
   vs1053_deselect_control ();
   vs1053_select_data ();
 
-  while (!fastDigitalRead (MP3_DREQ));
+  // GETS STUCK HERE
+//  while (!fastDigitalRead (MP3_DREQ));
 
   for (unsigned char i = 0; i < 32; i++)
   {
@@ -358,7 +360,8 @@ transfer_xbytes (unsigned char *buf, unsigned char num_bytes)
   vs1053_deselect_control ();
   vs1053_select_data ();
 
-  while (!fastDigitalRead (MP3_DREQ));
+  // GETS STUCK HERE
+//  while (!fastDigitalRead (MP3_DREQ));
 
   for (unsigned char i = 0; i < num_bytes; i++)
   {
@@ -382,8 +385,9 @@ transfer_value_bytes (unsigned char value, unsigned int num)
   deselect_sd ();
   vs1053_deselect_control ();
   vs1053_select_data ();
-
-  while (!fastDigitalRead (MP3_DREQ));
+  
+// GETS STUCK HERE
+//  while (!fastDigitalRead (MP3_DREQ));
 
   for (int i = 0; i < num; i++)
   {

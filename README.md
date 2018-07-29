@@ -6,6 +6,8 @@ Seiya Ono - Su'18
 
 I have ordered the [Adafruit VS1053 Breakout](https://www.adafruit.com/product/1381) and an Arduino Uno. This is to make sure that what I can prototype is up to my standards. I chose the Uno because of its detachable ATMegaa. [Here](https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard) is a simple article about programming the ATMega over the interface.
 
+Here is a good library I can test: [mpflaga](https://mpflaga.github.io/Arduino_Library-vs1053_for_SdFat/)
+
 ## Power
 
 Because I will only be using a single cell Li-ion battery, I've went and compared a few charger/discharge protection chips, and landed with the BQ2973. It is extremely simple, only requires a few components, but does not give any sort of indication on battery level, which is the only concern I have.

@@ -22,7 +22,7 @@
 
 -----------------------------------------------------------------------------*/
 
-#include <Bounce.h>
+#include <Bounce2.h>
 #include <SD.h>
 #include <SPI.h>
 
