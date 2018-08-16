@@ -12,6 +12,8 @@ Here is a good library I can test: [mpflaga](https://mpflaga.github.io/Arduino_L
 
 Because I will only be using a single cell Li-ion battery, I've went and compared a few charger/discharge protection chips, and landed with the BQ2973. It is extremely simple, only requires a few components, but does not give any sort of indication on battery level, which is the only concern I have.
 
+Another chip I found is the [BQ24270](http://www.ti.com/product/BQ24270/technicaldocuments) made for exactly my needs.
+
 ### Datasheets
 
 [VS1053](https://cdn-shop.adafruit.com/datasheets/vs1053.pdf)
@@ -21,3 +23,5 @@ Because I will only be using a single cell Li-ion battery, I've went and compare
 [BQ2973](http://www.ti.com/lit/ds/symlink/bq2973.pdf)
 
 [CSD16301Q2](http://www.ti.com/lit/ds/symlink/csd16301q2.pdf)
+
+[BQ24270](http://www.ti.com/lit/ds/symlink/bq24270.pdf)
