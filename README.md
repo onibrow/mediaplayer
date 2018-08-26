@@ -25,3 +25,7 @@ Another chip I found is the [BQ24270](http://www.ti.com/product/BQ24270/technica
 [CSD16301Q2](http://www.ti.com/lit/ds/symlink/csd16301q2.pdf)
 
 [BQ24270](http://www.ti.com/lit/ds/symlink/bq24270.pdf)
+
+### BOM
+
+Mega Chip mount: <https://www.digikey.com/products/en?keywords=ED3128-ND>
