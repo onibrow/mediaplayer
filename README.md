@@ -14,6 +14,8 @@ Because I will only be using a single cell Li-ion battery, I've went and compare
 
 Another chip I found is the [BQ24270](http://www.ti.com/product/BQ24270/technicaldocuments) made for exactly my needs.
 
+This one has been deactivated, so I will switch over to the [BQ24297](http://www.ti.com/product/bq24297/description). An arduino library can be found [here](https://github.com/IRNAS/bq2429x).
+
 ### Datasheets
 
 [VS1053](https://cdn-shop.adafruit.com/datasheets/vs1053.pdf)
@@ -24,7 +26,7 @@ Another chip I found is the [BQ24270](http://www.ti.com/product/BQ24270/technica
 
 [CSD16301Q2](http://www.ti.com/lit/ds/symlink/csd16301q2.pdf)
 
-[BQ24270](http://www.ti.com/lit/ds/symlink/bq24270.pdf)
+[BQ24297](http://www.ti.com/lit/ds/symlink/bq24297.pdf)
 
 ### BOM
 
