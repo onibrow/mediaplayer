@@ -16,6 +16,8 @@ Another chip I found is the [BQ24270](http://www.ti.com/product/BQ24270/technica
 
 This one has been deactivated, so I will switch over to the [BQ24297](http://www.ti.com/product/bq24297/description). An arduino library can be found [here](https://github.com/IRNAS/bq2429x).
 
+[New LiPo Charging Circuit](https://learn.adafruit.com/adafruit-microlipo-and-minilipo-battery-chargers/downloads)
+
 ### Datasheets
 
 [VS1053](https://cdn-shop.adafruit.com/datasheets/vs1053.pdf)

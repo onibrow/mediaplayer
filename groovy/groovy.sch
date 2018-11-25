@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -786,7 +786,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="FB1" library="scono" deviceset="FERRITE" device=""/>
 <part name="J1" library="scono" deviceset="USB_MICRO" device=""/>
 <part name="SUPPLY4" library="scono" deviceset="GND" device=""/>
-<part name="SUPPLY5" library="scono" deviceset="VCC" device=""/>
 <part name="SUPPLY6" library="scono" deviceset="GND" device=""/>
 <part name="U1" library="scono" deviceset="AP7312-1833" device=""/>
 <part name="U$2" library="scono" deviceset="3.3V" device=""/>
@@ -816,7 +815,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="FB1" gate="G$1" x="127" y="160.02" rot="R90"/>
 <instance part="J1" gate="G$1" x="22.86" y="139.7"/>
 <instance part="SUPPLY4" gate="GND" x="38.1" y="132.08"/>
-<instance part="SUPPLY5" gate="G$1" x="66.04" y="147.32"/>
 <instance part="SUPPLY6" gate="GND" x="119.38" y="157.48"/>
 <instance part="U1" gate="G$1" x="83.82" y="142.24"/>
 <instance part="U$2" gate="G$1" x="71.12" y="149.86"/>
@@ -837,13 +835,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="J1" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <wire x1="33.02" y1="144.78" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
-<pinref part="U1" gate="G$1" pin="VIN"/>
-<wire x1="66.04" y1="147.32" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="144.78" x2="66.04" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -918,6 +909,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="109.22" y1="147.32" x2="93.98" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="149.86" x2="109.22" y2="147.32" width="0.1524" layer="91"/>
 <junction x="109.22" y="147.32"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VIN"/>
+<wire x1="66.04" y1="147.32" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="147.32" x2="66.04" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

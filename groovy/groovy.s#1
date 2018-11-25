@@ -796,6 +796,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="C3" library="scono" deviceset="CAP" device="0402-CAP" value="10uF"/>
 <part name="U$3" library="scono" deviceset="1.8V" device=""/>
 <part name="U$4" library="scono" deviceset="3.3V" device=""/>
+<part name="SUPPLY8" library="scono" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="scono" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -824,6 +826,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="C3" gate="G$1" x="116.84" y="142.24" rot="R90"/>
 <instance part="U$3" gate="G$1" x="109.22" y="149.86"/>
 <instance part="U$4" gate="G$1" x="101.6" y="149.86"/>
+<instance part="SUPPLY8" gate="GND" x="109.22" y="129.54"/>
+<instance part="SUPPLY9" gate="GND" x="116.84" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -858,17 +862,22 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="93.98" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <wire x1="99.06" y1="137.16" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="134.62" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+<wire x1="109.22" y1="134.62" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="139.7" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="134.62" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
-<junction x="99.06" y="134.62"/>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
+<wire x1="116.84" y1="134.62" x2="116.84" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AGND" class="0">
