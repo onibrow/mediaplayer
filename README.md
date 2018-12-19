@@ -30,6 +30,16 @@ This one has been deactivated, so I will switch over to the [BQ24297](http://www
 
 [BQ24297](http://www.ti.com/lit/ds/symlink/bq24297.pdf)
 
+[MCP73831T](https://www.digikey.com/product-detail/en/microchip-technology/MCP73831T-2ACI-OT/MCP73831T-2ACI-OTCT-ND/1979802)
+
 ### BOM
 
 Mega Chip mount: <https://www.digikey.com/products/en?keywords=ED3128-ND>
+
+VS1053: <https://www.digikey.com/product-detail/en/adafruit-industries-llc/1681/1528-2645-ND/>
+
+ATMega328: <https://www.digikey.com/product-detail/en/microchip-technology/ATMEGA328PB-AUR/ATMEGA328PB-AURCT-ND/5722706>
+
+### Assembly
+
+I need to only do the microcontroller and peripherals first, so I can power it using 5V and flash it with the bootloader (no regulator).
