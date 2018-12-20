@@ -8,6 +8,8 @@ I have ordered the [Adafruit VS1053 Breakout](https://www.adafruit.com/product/1
 
 Here is a good library I can test: [mpflaga](https://mpflaga.github.io/Arduino_Library-vs1053_for_SdFat/)
 
+Small article with someone having trouble with `XTEST` pin: <http://www.toughdev.com/content/2013/10/interfacing-vs1053-audio-encoderdecoder-module-with-pic-using-spi/>
+
 ## Power
 
 Because I will only be using a single cell Li-ion battery, I've went and compared a few charger/discharge protection chips, and landed with the BQ2973. It is extremely simple, only requires a few components, but does not give any sort of indication on battery level, which is the only concern I have.
@@ -39,6 +41,8 @@ Mega Chip mount: <https://www.digikey.com/products/en?keywords=ED3128-ND>
 VS1053: <https://www.digikey.com/product-detail/en/adafruit-industries-llc/1681/1528-2645-ND/>
 
 ATMega328: <https://www.digikey.com/product-detail/en/microchip-technology/ATMEGA328PB-AUR/ATMEGA328PB-AURCT-ND/5722706>
+
+Codec Crystal: <https://www.digikey.com/product-detail/en/abracon-llc/ABM8G-12.288MHZ-18-D2Y-T/535-10262-1-ND/2218075>
 
 ### Assembly
 
