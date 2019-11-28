@@ -838,6 +838,45 @@ chip</description>
 <rectangle x1="-6.2" y1="-6.85" x2="6.35" y2="-0.4" layer="39"/>
 <text x="-4.05" y="3.6" size="1.27" layer="21" font="vector">Micro SD</text>
 </package>
+<package name="CUI_SJ-3524-SMT">
+<wire x1="-3.5" y1="-3" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-3.5" y2="3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="-3.5" y2="3" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="3" x2="11" y2="3" width="0.127" layer="51"/>
+<wire x1="11" y1="3" x2="11" y2="-3" width="0.127" layer="51"/>
+<wire x1="11" y1="-3" x2="-3.5" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="3" x2="-0.4" y2="3" width="0.127" layer="21"/>
+<wire x1="2.2" y1="3" x2="11" y2="3" width="0.127" layer="21"/>
+<wire x1="11" y1="3" x2="11" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="-2.4" y2="-3" width="0.127" layer="21"/>
+<wire x1="0.2" y1="-3" x2="6.7" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="5.35" x2="11.25" y2="5.35" width="0.05" layer="39"/>
+<wire x1="11.25" y1="5.35" x2="11.25" y2="-5.35" width="0.05" layer="39"/>
+<wire x1="11.25" y1="-5.35" x2="-3.75" y2="-5.35" width="0.05" layer="39"/>
+<text x="-3.105259375" y="5.308990625" size="1.27215" layer="25">&gt;NAME</text>
+<text x="-3.20475" y="-6.609790625" size="1.27188125" layer="27">&gt;VALUE</text>
+<circle x="-4.3" y="-3.3" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.3" y="-3.3" radius="0.1" width="0.2" layer="51"/>
+<wire x1="9.9" y1="-3" x2="11" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-6" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-6" y1="2.5" x2="-6" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-6" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-6" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-6" y1="2.5" x2="-6" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-6" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="5.35" x2="-3.75" y2="2.75" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="2.75" x2="-6.25" y2="2.75" width="0.05" layer="39"/>
+<wire x1="-6.25" y1="2.75" x2="-6.25" y2="-2.75" width="0.05" layer="39"/>
+<wire x1="-6.25" y1="-2.75" x2="-3.75" y2="-2.75" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="-2.75" x2="-3.75" y2="-5.35" width="0.05" layer="39"/>
+<smd name="4" x="12.3" y="0.75" dx="2.6" dy="2.8" layer="1"/>
+<hole x="0" y="0" drill="1.7"/>
+<smd name="3" x="0.9" y="3.7" dx="2.2" dy="2.8" layer="1"/>
+<smd name="1" x="-1.1" y="-3.7" dx="2.2" dy="2.8" layer="1"/>
+<smd name="2" x="8.3" y="-3.7" dx="2.8" dy="2.8" layer="1"/>
+<hole x="7" y="0" drill="1.7"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X03" urn="urn:adsk.eagle:package:38063/1" type="box">
@@ -1253,6 +1292,42 @@ design rules under a new name.</description>
 <attribute name="PACKAGE" value="R0603" x="-43.2" y="-147.4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="P1" library="scono" package="MICROSD" value="MICROSD" x="-53.3" y="-142.3"/>
+<element name="J6" library="scono" package="CUI_SJ-3524-SMT" value="SJ-3524-SMT" x="-53.9" y="-157.6">
+<attribute name="CUI_PURCHASE_URL" value="https://www.cui.com/product/interconnect/audio-connectors/3.5-mm-jacks/sj-352x-smt-series?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM" x="-53.9" y="-157.6" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" SJ Series 3.5 mm 12 V SMT Right Angle Stereo Audio Jack " x="-53.9" y="-157.6" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="CP-3524SJCT-ND" x="-53.9" y="-157.6" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/cui-inc/SJ-3524-SMT-TR/CP-3524SJCT-ND/669705?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="-53.9" y="-157.6" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="CUI Inc." x="-53.9" y="-157.6" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="SJ-3524-SMT-TR" x="-53.9" y="-157.6" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="None" x="-53.9" y="-157.6" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R7" library="scono" package="R0603" value="100k" x="-58.2" y="-167.8">
+<attribute name="DESCRIPTION" value="RESISTOR, American symbol" x="-58.2" y="-167.8" size="1.778" layer="27" display="off"/>
+<attribute name="DISTRIBUTOR" value="DigiKey" x="-58.2" y="-167.8" size="1.778" layer="27" display="off"/>
+<attribute name="DISTRIBUTOR_PART_NUMBER" value="" x="-58.2" y="-167.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Rohm Semiconductor" x="-58.2" y="-167.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="" x="-58.2" y="-167.8" size="1.778" layer="27" display="off"/>
+<attribute name="NOTES" value="Cut Tape" x="-58.2" y="-167.8" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="R0603" x="-58.2" y="-167.8" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R13" library="scono" package="R0603" value="100k" x="-58.2" y="-171.5">
+<attribute name="DESCRIPTION" value="RESISTOR, American symbol" x="-58.2" y="-171.5" size="1.778" layer="27" display="off"/>
+<attribute name="DISTRIBUTOR" value="DigiKey" x="-58.2" y="-171.5" size="1.778" layer="27" display="off"/>
+<attribute name="DISTRIBUTOR_PART_NUMBER" value="" x="-58.2" y="-171.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Rohm Semiconductor" x="-58.2" y="-171.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="" x="-58.2" y="-171.5" size="1.778" layer="27" display="off"/>
+<attribute name="NOTES" value="Cut Tape" x="-58.2" y="-171.5" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="R0603" x="-58.2" y="-171.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R14" library="scono" package="R0603" value="100k" x="-58.2" y="-175.2">
+<attribute name="DESCRIPTION" value="RESISTOR, American symbol" x="-58.2" y="-175.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTRIBUTOR" value="DigiKey" x="-58.2" y="-175.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTRIBUTOR_PART_NUMBER" value="" x="-58.2" y="-175.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Rohm Semiconductor" x="-58.2" y="-175.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="" x="-58.2" y="-175.2" size="1.778" layer="27" display="off"/>
+<attribute name="NOTES" value="Cut Tape" x="-58.2" y="-175.2" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="R0603" x="-58.2" y="-175.2" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
@@ -1301,6 +1376,14 @@ design rules under a new name.</description>
 <contactref element="C24" pad="1"/>
 <contactref element="C23" pad="1"/>
 <contactref element="P1" pad="6"/>
+<contactref element="J6" pad="1"/>
+<contactref element="R7" pad="1"/>
+<contactref element="R13" pad="1"/>
+<contactref element="R14" pad="1"/>
+<wire x1="-59.05" y1="-171.5" x2="-59.05" y2="-175.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.05" y1="-167.8" x2="-59.05" y2="-171.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-55" y1="-161.3" x2="-59.05" y2="-167.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.6995" y1="-142.05" x2="-55" y2="-161.3" width="0" layer="19" extent="1-1"/>
 <wire x1="-43.25" y1="-121" x2="-55.6995" y2="-142.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-43.25" y1="-118.4" x2="-43.25" y2="-121" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.56" y1="-88.7" x2="-43.25" y2="-118.4" width="0" layer="19" extent="1-1"/>
@@ -1508,6 +1591,8 @@ design rules under a new name.</description>
 <signal name="LEFT">
 <contactref element="U3" pad="46"/>
 <contactref element="R9" pad="1"/>
+<contactref element="J6" pad="2"/>
+<wire x1="-33.05" y1="66.9" x2="-45.6" y2="-161.3" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.9526" y1="115.4164" x2="-33.05" y2="66.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GBUF">
@@ -1518,6 +1603,8 @@ design rules under a new name.</description>
 <signal name="RIGHT">
 <contactref element="U3" pad="39"/>
 <contactref element="R8" pad="1"/>
+<contactref element="J6" pad="3"/>
+<wire x1="-33.05" y1="70.6" x2="-53" y2="-153.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.4474" y1="115.4164" x2="-33.05" y2="70.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RCAP">
@@ -1641,6 +1728,24 @@ design rules under a new name.</description>
 <contactref element="U4" pad="1"/>
 <contactref element="U3" pad="8"/>
 <wire x1="-31.67" y1="112.4" x2="-19.4164" y2="110.438" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="J6" pad="4"/>
+</signal>
+<signal name="N$7">
+<contactref element="U4" pad="11"/>
+<contactref element="R7" pad="2"/>
+<wire x1="-28.7" y1="105.43" x2="-57.35" y2="-167.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="U4" pad="10"/>
+<contactref element="R13" pad="2"/>
+<wire x1="-29.5" y1="105.43" x2="-57.35" y2="-171.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$11">
+<contactref element="U4" pad="9"/>
+<contactref element="R14" pad="2"/>
+<wire x1="-30.3" y1="105.43" x2="-57.35" y2="-175.2" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

@@ -44,6 +44,8 @@ ATMega328: <https://www.digikey.com/product-detail/en/microchip-technology/ATMEG
 
 Codec Crystal: <https://www.digikey.com/product-detail/en/abracon-llc/ABM8G-12.288MHZ-18-D2Y-T/535-10262-1-ND/2218075>
 
+Buttons: <https://www.digikey.com/product-detail/en/e-switch/TL1105LF160Q/EG2505-ND/378971> <https://www.digikey.com/product-detail/en/e-switch/TL1105LF250Q/EG2506-ND/378972>
+
 ### Assembly
 
 I need to only do the microcontroller and peripherals first, so I can power it using 5V and flash it with the bootloader (no regulator).

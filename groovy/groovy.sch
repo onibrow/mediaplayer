@@ -3218,6 +3218,45 @@ No silk outline, but tDocu layer shows pin location.
 <rectangle x1="-6.2" y1="-6.85" x2="6.35" y2="-0.4" layer="39"/>
 <text x="-4.05" y="3.6" size="1.27" layer="21" font="vector">Micro SD</text>
 </package>
+<package name="CUI_SJ-3524-SMT">
+<wire x1="-3.5" y1="-3" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-3.5" y2="3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="-3.5" y2="3" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="3" x2="11" y2="3" width="0.127" layer="51"/>
+<wire x1="11" y1="3" x2="11" y2="-3" width="0.127" layer="51"/>
+<wire x1="11" y1="-3" x2="-3.5" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="3" x2="-0.4" y2="3" width="0.127" layer="21"/>
+<wire x1="2.2" y1="3" x2="11" y2="3" width="0.127" layer="21"/>
+<wire x1="11" y1="3" x2="11" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="-2.4" y2="-3" width="0.127" layer="21"/>
+<wire x1="0.2" y1="-3" x2="6.7" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="5.35" x2="11.25" y2="5.35" width="0.05" layer="39"/>
+<wire x1="11.25" y1="5.35" x2="11.25" y2="-5.35" width="0.05" layer="39"/>
+<wire x1="11.25" y1="-5.35" x2="-3.75" y2="-5.35" width="0.05" layer="39"/>
+<text x="-3.105259375" y="5.308990625" size="1.27215" layer="25">&gt;NAME</text>
+<text x="-3.20475" y="-6.609790625" size="1.27188125" layer="27">&gt;VALUE</text>
+<circle x="-4.3" y="-3.3" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.3" y="-3.3" radius="0.1" width="0.2" layer="51"/>
+<wire x1="9.9" y1="-3" x2="11" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-6" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-6" y1="2.5" x2="-6" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-6" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="2.5" x2="-6" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-6" y1="2.5" x2="-6" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-6" y1="-2.5" x2="-3.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="5.35" x2="-3.75" y2="2.75" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="2.75" x2="-6.25" y2="2.75" width="0.05" layer="39"/>
+<wire x1="-6.25" y1="2.75" x2="-6.25" y2="-2.75" width="0.05" layer="39"/>
+<wire x1="-6.25" y1="-2.75" x2="-3.75" y2="-2.75" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="-2.75" x2="-3.75" y2="-5.35" width="0.05" layer="39"/>
+<smd name="4" x="12.3" y="0.75" dx="2.6" dy="2.8" layer="1"/>
+<hole x="0" y="0" drill="1.7"/>
+<smd name="3" x="0.9" y="3.7" dx="2.2" dy="2.8" layer="1"/>
+<smd name="1" x="-1.1" y="-3.7" dx="2.2" dy="2.8" layer="1"/>
+<smd name="2" x="8.3" y="-3.7" dx="2.8" dy="2.8" layer="1"/>
+<hole x="7" y="0" drill="1.7"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X03" urn="urn:adsk.eagle:package:38063/1" type="box">
@@ -3880,6 +3919,41 @@ CONN_03
 <wire x1="20.32" y1="7.62" x2="17.78" y2="7.62" width="0.254" layer="94"/>
 <wire x1="17.78" y1="7.62" x2="15.24" y2="12.7" width="0.254" layer="94"/>
 <circle x="15.24" y="12.7" radius="0.915809375" width="0.254" layer="94"/>
+</symbol>
+<symbol name="SJ-3524-SMT">
+<wire x1="-5.969" y1="1.27" x2="-5.969" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.969" y1="-2.54" x2="-4.699" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-4.699" y1="-2.54" x2="-4.699" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-4.699" y1="1.27" x2="-5.334" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-5.334" y1="1.27" x2="-5.969" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-5.334" y1="1.27" x2="-5.334" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.334" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-2.286" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="1.27" x2="-3.302" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.636990625" y="8.273809375" size="2.198909375" layer="95">&gt;NAME</text>
+<text x="-7.651859375" y="-7.66063125" size="2.20481875" layer="96">&gt;VALUE</text>
+<wire x1="7.62" y1="2.54" x2="-1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.016" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.62" width="0.1524" layer="94"/>
+<wire x1="1.9" y1="-0.6" x2="3.09" y2="-0.6" width="0.1524" layer="94"/>
+<wire x1="3.09" y1="-0.6" x2="2.53" y2="-2.52" width="0.1524" layer="94"/>
+<wire x1="2.53" y1="-2.52" x2="2.53" y2="-2.53" width="0.1524" layer="94"/>
+<wire x1="1.9" y1="-0.6" x2="2.5" y2="-2.53" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="12.7" y="5.08" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="12.7" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="3" x="12.7" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="4" x="12.7" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5678,6 +5752,33 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SJ-3524-SMT" prefix="J">
+<description>&lt;b&gt;Audio Jack Connector&lt;/b&gt; 3.5 mm Low Profile Surface Mount Stereo Jack, 4 Pin Right-Angle</description>
+<gates>
+<gate name="G$1" symbol="SJ-3524-SMT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CUI_SJ-3524-SMT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CUI_PURCHASE_URL" value="https://www.cui.com/product/interconnect/audio-connectors/3.5-mm-jacks/sj-352x-smt-series?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM"/>
+<attribute name="DESCRIPTION" value=" SJ Series 3.5 mm 12 V SMT Right Angle Stereo Audio Jack "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="CP-3524SJCT-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/cui-inc/SJ-3524-SMT-TR/CP-3524SJCT-ND/669705?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
+<attribute name="MF" value="CUI Inc."/>
+<attribute name="MP" value="SJ-3524-SMT-TR"/>
+<attribute name="PACKAGE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -5790,6 +5891,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="P1" library="scono" deviceset="MICROSD" device=""/>
 <part name="SUPPLY15" library="scono" deviceset="GND" device=""/>
 <part name="U$5" library="scono" deviceset="3.3V" device=""/>
+<part name="J6" library="scono" deviceset="SJ-3524-SMT" device=""/>
+<part name="SUPPLY18" library="scono" deviceset="GND" device=""/>
+<part name="R7" library="scono" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="R13" library="scono" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="R14" library="scono" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="SUPPLY27" library="scono" deviceset="GND" device=""/>
+<part name="SUPPLY28" library="scono" deviceset="GND" device=""/>
+<part name="SUPPLY29" library="scono" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6134,6 +6243,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="P1" gate="G$1" x="223.52" y="73.66" rot="R270"/>
 <instance part="SUPPLY15" gate="GND" x="200.66" y="81.28" rot="R270"/>
 <instance part="U$5" gate="G$1" x="203.2" y="71.12" rot="R90"/>
+<instance part="J6" gate="G$1" x="25.4" y="71.12"/>
+<instance part="SUPPLY18" gate="GND" x="45.72" y="76.2" rot="R90"/>
+<instance part="R7" gate="G$1" x="162.56" y="55.88" rot="R90"/>
+<instance part="R13" gate="G$1" x="167.64" y="55.88" rot="R90"/>
+<instance part="R14" gate="G$1" x="172.72" y="55.88" rot="R90"/>
+<instance part="SUPPLY27" gate="GND" x="162.56" y="48.26"/>
+<instance part="SUPPLY28" gate="GND" x="167.64" y="48.26"/>
+<instance part="SUPPLY29" gate="GND" x="172.72" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -6283,6 +6400,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="142.24" y1="119.38" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
 <label x="142.24" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
+<label x="48.26" y="68.58" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="GBUF" class="0">
 <segment>
@@ -6297,6 +6419,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="124.46" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
 <label x="142.24" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="3"/>
+<wire x1="38.1" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
+<label x="48.26" y="73.66" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RCAP" class="0">
@@ -6457,6 +6584,23 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="208.28" y1="81.28" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="76.2" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY18" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="SUPPLY27" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="SUPPLY28" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="SUPPLY29" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="XTALIN" class="0">
 <segment>
@@ -6557,6 +6701,39 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="U3" gate="G$1" pin="DREQ"/>
 <wire x1="101.6" y1="144.78" x2="96.52" y2="144.78" width="0.1524" layer="91"/>
 <label x="91.44" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="J6" gate="G$1" pin="4"/>
+<wire x1="38.1" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PD7"/>
+<wire x1="139.7" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="60.96" x2="162.56" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="60.96" x2="177.8" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PD6"/>
+<wire x1="139.7" y1="63.5" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="63.5" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PD5"/>
+<wire x1="139.7" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="66.04" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
